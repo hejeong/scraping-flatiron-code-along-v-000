@@ -1,9 +1,14 @@
 class Course
-  #class variables
+  # class variables
   @@all = []
 
-  #attribute accessors
+  # attribute accessors
   attr_accessor :title, :schedule, :description
+
+  # instance methods
+  def initialize
+    @@all << self
+  end
 
   # class methods
   def self.all
