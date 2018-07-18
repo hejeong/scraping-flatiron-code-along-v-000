@@ -3,7 +3,7 @@ class Course
   @@all = []
 
   #attribute accessors
-  attr_accessors :title, :schedule, :description
+  attr_accessor :title, :schedule, :description
 
   # class methods
   def self.all
